@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./01main.css">
+  </head>
+<body>
+   
+    <main>
+        <form>
+                <table style="background-color: lightblue;">
+
+                                  <!-- TITULO FORMULARIO -->
+                        <tr >
+                            <td class="espacio">
+                
+                            </td>    
+                            
+                            <td align="center" class="ancho">
+                                    <h2>   Contact Form  </h2> 
+                                </td>     
+                        </tr>
+            
+                                   <!-- INGRESO NOMBRE -->
+
+                        <tr>
+                                <td class="espacio">
+
+                                </td>
+                                <td class="ancho">
+                                                    <b>First Name</b>                                   
+                                </td>
+                        </tr>
+                                   
+                        <tr>
+                            <td class="espacio">
+
+                            </td>
+                            <td class="ancho">
+                                <input type="text" placeholder="John" pattern="[A-Za-z]+" minlength="7" required>
+                            </td>
+                        </tr>
+
+                                  <!-- INGRESO APELLIDO -->
+
+                        <tr>
+                            <td class="espacio">
+
+                            </td>
+                            <td class="ancho">
+                                                <b>Last Name</b>                                   
+                            </td>
+                         </tr>
+
+
+                        <tr>
+                            <td class="espacio">
+
+                            </td>
+                            <td class="ancho">
+                                <input type="text" placeholder="Doe" pattern="[A-Za-z]+" minlength="7" required>
+                            </td>
+                        </tr>
+
+                                    <!-- INGRESO CORREO -->
+
+
+                        <tr>
+                            <td class="espacio">
+            
+                             </td>
+                            <td class="ancho">
+                                                <b>Email</b>                                   
+                             </td>
+                        </tr>
+            
+            
+                         <tr>
+                              <td class="espacio">
+            
+                             </td>
+                            <td class="ancho">
+                                       <input type="email" placeholder="you@domain.com" pattern="[A-Z a-z 0-9]{1,20}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}." required>
+                             </td>
+                        </tr>
+
+
+                                    <!-- INGRESO TEXTO -->
+
+                         <tr>
+                             <td class="espacio">
+                        
+                             </td>
+                             <td class="ancho">
+                                    <b>Message</b>                                   
+                            </td>
+                        </tr>
+                        
+                        
+                         <tr>
+                             <td class="espacio">
+                        
+                                </td>
+                                <td class="ancho">
+                                          <textarea cols="46" rows="10 " placeholder="Enter your message here ... " minlength="20" maxlength="140" pattern="[A-Z a-z 0-9]" required></textarea>
+                                 </td>
+                        </tr>
+
+
+                                    <!-- BOTÓN SUBMIT -->
+
+                        <tr>
+                            <td class="espacio">
+
+                            </td>
+                            <td class="ancho" align="center"> 
+                                <button type="submit" style="background-color: steelblue; color: white;"> Submit </button>
+                            </td>
+                    </tr>
+                              
+
+                </table>
+
+        </form>
+    </main>
+
+</body>
+</html>
