@@ -4,110 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./01main.css">
   </head>
 <body>
-    <table style="background-color: lightblue;">
-     
-        <tr >
-            <td class="espacio">
-
-            </td>    
-            
-            <td align="center" class="ancho">
-                    <h3>   Contact Form  </h3> 
-                 </td>     
-        </tr>
-
-
-
-        <tr style="height: 6mm;">
-            <td class="espacio">
-
-            </td>
-            <td class="ancho">
-                <b>First Name</b> 
-            </td>
-        </tr>
-
-        <tr>
-            <td class="espacio">
-
-           </td>
-            <td class="ancho">
-                <input type="text" size="40" placeholder="John" minlength="7" required>
-            </td>
-        </tr>
-
    
-        <tr style="height: 6mm;">
-            <td class="espacio">
+    <main>
+        <form>
+                <table style="background-color: lightblue;">
 
-            </td>
-            <td class="ancho">
-            <b>Last Name</b> 
-           </td>
-        </tr>
+                                  <!-- TITULO FORMULARIO -->
+                        <tr >
+                            <td class="espacio">
+                
+                            </td>    
+                            
+                            <td align="center" class="ancho">
+                                    <h2>   Contact Form  </h2> 
+                                </td>     
+                        </tr>
+            
+                                   <!-- INGRESO NOMBRE -->
 
-       <tr>
-            <td class="espacio">
+                        <tr>
+                                <td class="espacio">
 
-            </td>
-            <td>
-               <input type="text" size="40" placeholder="Doe" minlength="7" required>
-            </td>
-       </tr>
+                                </td>
+                                <td class="ancho">
+                                                    <b>First Name</b>                                   
+                                </td>
+                        </tr>
+                                   
+                        <tr>
+                            <td class="espacio">
 
+                            </td>
+                            <td class="ancho">
+                                <input type="text" placeholder="John" pattern="[A-Za-z]+" minlength="7" required>
+                            </td>
+                        </tr>
 
-       <tr style="height: 6mm;">
-        <td class="espacio">
+                                  <!-- INGRESO APELLIDO -->
 
-        </td>
-        <td class="ancho">
-            <b>Email</b> 
-       </td>
-      </tr>
+                        <tr>
+                            <td class="espacio">
 
-      <tr>
-        <td class="espacio">
-
-        </td>
-        <td>
-           <input type="email" size="40" placeholder="you@domain.com" required>
-        </td>
-      </tr>
-
-      <tr style="height: 6mm;">
-        <td class="espacio">
-
-        </td>
-        <td class="ancho">
-            <b>Message</b> 
-       </td>
-      </tr>
-
-      <tr>
-        <td class="espacio">
-
-        </td>
-        <td> 
-           <textarea  cols="42" rows="10" maxlength="140" minlength="20" required>Enter your messaage here</textarea>
-        </td>
-      </tr>
-
-       <tr style="height: 12mm;">
-        <td class="espacio">
-
-        </td>
-        <td class="ancho" align="center">
-          <button>Submit</button>
-           <!---- <input type="button" value="Submit" style="background-color: steelblue; color: white;"> -->
-       </td>
-       </tr>
+                            </td>
+                            <td class="ancho">
+                                                <b>Last Name</b>                                   
+                            </td>
+                         </tr>
 
 
-        
-    </table>
+                        <tr>
+                            <td class="espacio">
+
+                            </td>
+                            <td class="ancho">
+                                <input type="text" placeholder="Doe" pattern="[A-Za-z]+" minlength="7" required>
+                            </td>
+                        </tr>
+
+                                    <!-- INGRESO CORREO -->
+
+
+                        <tr>
+                            <td class="espacio">
+            
+                             </td>
+                            <td class="ancho">
+                                                <b>Email</b>                                   
+                             </td>
+                        </tr>
+            
+            
+                         <tr>
+                              <td class="espacio">
+            
+                             </td>
+                            <td class="ancho">
+                                       <input type="email" placeholder="you@domain.com" pattern="[A-Z a-z 0-9]{1,20}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}." required>
+                             </td>
+                        </tr>
+
+
+                                    <!-- INGRESO TEXTO -->
+
+                         <tr>
+                             <td class="espacio">
+                        
+                             </td>
+                             <td class="ancho">
+                                    <b>Message</b>                                   
+                            </td>
+                        </tr>
+                        
+                        
+                         <tr>
+                             <td class="espacio">
+                        
+                                </td>
+                                <td class="ancho">
+                                          <textarea cols="46" rows="10 " placeholder="Enter your message here ... " minlength="20" maxlength="140" pattern="[A-Z a-z 0-9]" required></textarea>
+                                 </td>
+                        </tr>
+
+
+                                    <!-- BOTÓN SUBMIT -->
+
+                        <tr>
+                            <td class="espacio">
+
+                            </td>
+                            <td class="ancho" align="center"> 
+                                <button type="submit" style="background-color: steelblue; color: white;"> Submit </button>
+                            </td>
+                    </tr>
+                              
+
+                </table>
+
+        </form>
+    </main>
+
 </body>
 </html>
